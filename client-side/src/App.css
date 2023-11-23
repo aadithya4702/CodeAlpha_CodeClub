@@ -1,0 +1,125 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Poppins&family=Roboto+Mono&family=Sono&display=swap");
+
+/*
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Sono', sans-serif; */
+
+.custom_logo_font {
+  font-family: "Lobster", sans-serif;
+}
+:root {
+  font-family: "Poppins", sans-serif;
+}
+.inputfield > .input {
+  width: 280px;
+  height: 40px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  transition: 0.3s all ease-in;
+  border-radius: 3px;
+  border: 2px solid black;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.inputfield > span {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  transition: 0.3s all ease-in;
+  user-select: none;
+  opacity: 0.7;
+  z-index: 1;
+  pointer-events: none;
+}
+.inputfield > .input:focus ~ span,
+.inputfield > .input:valid ~ span {
+  top: -15px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+  padding: 1px;
+  color: goldenrod;
+  opacity: 1;
+}
+.inputfield > .input:focus,
+.inputfield > .input:valid {
+  border: 2px solid goldenrod;
+}
+
+/* Custom styles for scrollbar */
+/* Track */
+.scrollbar-track-gray-300::-webkit-scrollbar-track {
+  background-color: #edf2f7; /* Change this color as needed */
+}
+
+/* Thumb */
+.scrollbar-thumb-blue-500::-webkit-scrollbar-thumb {
+  background-color: #4299e1; /* Change this color as needed */
+  border-radius: 8px; /* Change this value as needed */
+}
+
+/* Default styling for the checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #666;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the checkbox when checked */
+input[type="checkbox"]:checked {
+  background-color: #e53e3e; /* Red-600 */
+  border-color: black;
+}
